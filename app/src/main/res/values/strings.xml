@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">first app</string>
+    <string name="app_name">BajajFinserv</string>
+    <string name="enter_name">enter name</string>
+    <string name="enter_pwd">enter password</string>
+    <string name="rem_pwd">remember password</string>
+</resources>

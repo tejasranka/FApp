@@ -1,6 +1,7 @@
 package com.example.firstapp
 
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -13,6 +14,8 @@ import android.widget.Toast
 
 class HomeActivity : AppCompatActivity() {
     lateinit var etHome: EditText
+    private var fileName = "bajaj_sharedprefs"
+    private lateinit var sharedPreferences: SharedPreferences
 
     var TAG = HomeActivity::class.simpleName
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,6 +53,27 @@ override fun onStop() {
   Log.i(TAG,"onstop")
 
 }
+    private fun restoreData() {
+        //open the file
+        sharedPreferences = getSharedPreferences(fileName, MODE_PRIVATE)
+        //read from the file
+        var data = sharedPreferences.getString("mkey","")
+        //set the data into the edittext
+        etHome.setText(data)
+    }
+    private fun saveData() {
+        //get data from edittext
+        var data = etHome.text.toString()
+        //create file
+        sharedPreferences = getSharedPreferences(fileName, MODE_WORLD_WRITEABLE)
+        //open the file
+        var editor = sharedPreferences.edit()
+        //write to the file
+        editor.putString("mkey",data)
+        //save the file
+        editor.apply()
+    }
+
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         super.onCreateOptionsMenu(menu)

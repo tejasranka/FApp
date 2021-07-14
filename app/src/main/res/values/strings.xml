@@ -3,4 +3,23 @@
     <string name="enter_name">enter name</string>
     <string name="enter_pwd">enter password</string>
     <string name="rem_pwd">remember password</string>
+    <string name="title_activity_nav_drawer">NavDrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+    <string name="aff1">i am strong</string>
+    <string name="aff2">i workout everyday</string>
+    <string name="aff3">i am grateful</string>
+    <string name="aff4">i believe in myself</string>
+    <string name="aff5">i am good</string>
+    <string name="aff6">i am a reader</string>
+
 </resources>
